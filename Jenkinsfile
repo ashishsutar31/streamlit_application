@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git 'https://github.com/ashishsutar/Streamlit_Application.git'
+                git 'https://github.com/ashishsutar31/streamlit_application.git'
             }
         }
         stage('Build Docker Image') {
