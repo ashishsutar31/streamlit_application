@@ -23,7 +23,7 @@ pipeline {
             steps {
                 sh '''
                     docker rm -f ashish-streamlit-container || true
-                    docker run -d --name ashish-streamlit-container -p 8501:8501 ashishsutar/ht-streamlit-app
+                    docker run -d --name ashish-streamlit-container -p 8501:8501 ashishsutar/ashish-streamlit-app
                 '''
             }
         }
