@@ -19,9 +19,9 @@
 # Command to run Streamlit app
 #CMD ["streamlit", "run", "app.py", "--server.port=8501", "--server.address=0.0.0.0"] 
 
-FROM python 3.10-slim
+FROM python:3.10-slim
 WORKDIR /app
 COPY requirements.txt ./
 RUN pip install --no-chache-dir -r requirements.txt
 COPY . .
-CMD ["streamlit", "app.py", "run", "--server.port=8501", "--server.adress=0.0.0.0"]
+CMD ["streamlit", "run", "app.py", "--server.port=8501", "--server.adress=0.0.0.0"]
